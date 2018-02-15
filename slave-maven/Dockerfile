@@ -10,11 +10,6 @@ LABEL com.redhat.component="jenkins-skopeo-slave" \
       io.openshift.tags="openshift,jenkins,slave,copy"
 USER root
 
-RUN yum repolist > /dev/null && \
-    yum clean all && \
-    INSTALL_PKGS="skopeo" && \
-    yum install -y --enablerepo=rhel-7-server-extras-rpms --setopt=tsflags=nodocs $INSTALL_PKGS && \
-    rpm -V $INSTALL_PKGS && \
-    yum clean all
+
 
 USER 1001
