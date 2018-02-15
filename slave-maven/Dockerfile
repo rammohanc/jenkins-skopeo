@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/openshift3/jenkins-slave-maven-rhel7
+FROM registry.access.redhat.com/openshift3/jenkins-slave-maven-rhel7:v3.6.173.0.96-2
 
 MAINTAINER Ben Parees <bparees@redhat.com>
 
